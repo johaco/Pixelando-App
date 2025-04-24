@@ -1,0 +1,64 @@
+/* STYLES OF NAVBAR */
+.nav-tech {
+  background-color: #1e1e1e;
+}
+nav .search-tech {
+  border-color: #cb6ce6;
+  color: #cb6ce6;
+}
+nav .search-tech:hover,
+nav .search-tech:active {
+  border-color: #cb6ce6 !important;
+  background-color: #cb6ce6 !important;
+  color: white !important;
+}
+
+nav .form-control-tech:focus {
+  border-color: #cb6ce6;
+  box-shadow: 0 0 0 0.2rem rgba(203, 108, 230, 0.25);
+}
+
+nav .logo-tech {
+  height: 40px;
+}
+
+/* HEADER */
+
+header {
+  background: linear-gradient(to top, #5170ff, #ff66c4);
+  margin-top: 65.99px;
+}
+
+/* PRODUCT CARD */
+.card-product-tech:hover {
+  background-color: #1e1e1e !important; /* fondo oscuro para la card */
+  color: white !important;
+  overflow: hidden !important;
+}
+
+.card-product-tech:hover .btn-detalles-tech {
+  color: white !important; /* texto blanco */
+  border-color: white !important;
+}
+
+div .card-product-tech:hover .btn-detalles-tech:hover {
+  background: linear-gradient(to top, #5170ff, #ff66c4) !important;
+  border-color: #cb6ce6 !important;
+}
+
+div .name-product-tech {
+  color: #cb6ce6;
+}
+.img-product-tech {
+  transition: transform 0.3s ease-in-out !important;
+}
+
+.card-product-tech:hover .img-product-tech {
+  transform: scale(1.05) !important;
+}
+
+/* FOOTER */
+
+.footer-tech {
+  background-color: #1e1e1e !important;
+}
