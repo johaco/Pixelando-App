@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { SearchBar } from "./SearchBar";
 
 export const Navbar = () => {
 
@@ -40,17 +41,7 @@ export const Navbar = () => {
               }
               
             </ul>
-            <form className="d-flex" role="search">
-              <input
-                className="form-control me-2 form-control-tech"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="search-tech btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+           <SearchBar/>
           </div>
         </div>
       </nav>

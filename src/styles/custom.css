@@ -29,6 +29,19 @@ header {
   margin-top: 65.99px;
 }
 
+/* POPULAR PRODUCTS SECTION */
+
+.title-product-tech {
+    color: #212529 !important; 
+}
+
+.line-tech{
+    background-image: linear-gradient(to right, #5170ff, #ff66c4) !important;
+    height: 2px !important;
+    width: 100% !important;
+    margin-bottom: 40px !important;
+}
+
 /* PRODUCT CARD */
 .card-product-tech:hover {
   background-color: #1e1e1e !important; /* fondo oscuro para la card */

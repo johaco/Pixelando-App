@@ -31,7 +31,7 @@ export const products = [
         price: 11.999,
         image: "/public/products/g11.jpg",
         description: "Xiaomi Redmi Note 12 Pro 5G (Onyx Gray, 128 GB)",
-        popular: false,
+        popular: true,
 
     },
     {
@@ -40,7 +40,7 @@ export const products = [
         price: 16.200,
         image: "/public/products/x7.jpg",
         description: "Xiaomi Redmi Note 12 Pro 5G (Onyx Gray, 128 GB)",
-        popular: false,
+        popular: true,
     },
 ]
 
