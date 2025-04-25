@@ -6,6 +6,7 @@ export const products = [
         image: "/public/products/a6s.jpg",
         description: "Xiaomi Redmi Note 12 Pro 5G (Onyx Gray, 128 GB)",
         popular: true,
+        category: "auriculares",
     },
     {
         brand: "Generico",
@@ -14,7 +15,7 @@ export const products = [
         image: "/public/products/d18.jpg",
         description: "Xiaomi Redmi Note 12 Pro 5G (Onyx Gray, 128 GB)",
         popular: true,
-
+        category: "smartwatchs",
     },
     {
         brand: "Generico",
@@ -23,7 +24,7 @@ export const products = [
         image: "/public/products/d20.jpg",
         description: "Xiaomi Redmi Note 12 Pro 5G (Onyx Gray, 128 GB)",
         popular: true,
-
+        category: "smartwatchs",
     },
     {
         brand: "Generico",
@@ -32,7 +33,7 @@ export const products = [
         image: "/public/products/g11.jpg",
         description: "Xiaomi Redmi Note 12 Pro 5G (Onyx Gray, 128 GB)",
         popular: true,
-
+        category: "auriculares",
     },
     {
         brand: "Generico",
@@ -41,6 +42,7 @@ export const products = [
         image: "/public/products/x7.jpg",
         description: "Xiaomi Redmi Note 12 Pro 5G (Onyx Gray, 128 GB)",
         popular: true,
+        category: "smartwatchs",
     },
 ]
 

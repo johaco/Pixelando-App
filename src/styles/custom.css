@@ -1,3 +1,22 @@
+/* Aplica al body y html */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor raíz de tu app */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* El contenido principal debe expandirse */
+.main-content {
+  flex: 1;
+  margin-top: 65.99px !important;
+}
 /* STYLES OF NAVBAR */
 .nav-tech {
   background-color: #1e1e1e;
@@ -26,7 +45,6 @@ nav .logo-tech {
 
 header {
   background: linear-gradient(to top, #5170ff, #ff66c4);
-  margin-top: 65.99px;
 }
 
 /* POPULAR PRODUCTS SECTION */
@@ -41,6 +59,7 @@ header {
     width: 100% !important;
     margin-bottom: 40px !important;
 }
+
 
 /* PRODUCT CARD */
 .card-product-tech:hover {

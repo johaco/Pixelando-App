@@ -1,19 +1,29 @@
 import { useState } from "react";
 import { SearchBar } from "./SearchBar";
+import { NavLink } from "react-router-dom";
 
 export const Navbar = () => {
-
-    const [categories, setcategories] = useState(['Parlantes', 'Auriculares', 'Smartwatchs','Cables','Accesorios']);
-    const [show, setShow] = useState(false);
+  const [categories, setcategories] = useState([
+    "Parlantes",
+    "Auriculares",
+    "Smartwatchs",
+    "Cables",
+    "Accesorios",
+  ]);
+  const [show, setShow] = useState(false);
 
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark nav-tech fixed-top">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            <img className="d-inline-block img-fluid logo-tech" src="/src/assets/logo.webp" alt="Logo" />
+            <img
+              className="d-inline-block img-fluid logo-tech"
+              src="/src/assets/logo.webp"
+              alt="Logo"
+            />
           </a>
-          
+
           <button
             className="navbar-toggler"
             type="button"
@@ -28,20 +38,34 @@ export const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <NavLink
+                  className={({ isActive }) =>
+                    "nav-link" + (isActive ? " active" : "")
+                  }
+                  to="/"
+                >
                   Inicio
-                </a>
+                </NavLink>
               </li>
-              {
+              {categories.map((cat) => (
+                <li className="nav-item" key={cat}>
+                  <NavLink
+                    className="nav-link"
+                    to={`/categoria/${cat.toLowerCase()}`}
+                  >
+                    {cat}
+                  </NavLink>
+                </li>
+              ))}
+              {/* {
                 categories.map((categories) => (
                     <li className="nav-item" key={categories}>
                         <a className="nav-link" href="#">{categories}</a>
                     </li>
                 ))
-              }
-              
+              } */}
             </ul>
-           <SearchBar/>
+            <SearchBar />
           </div>
         </div>
       </nav>
