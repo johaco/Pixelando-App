@@ -16,13 +16,13 @@ export const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-dark nav-tech fixed-top">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <NavLink className="navbar-brand" to="/">
             <img
               className="d-inline-block img-fluid logo-tech"
               src="/src/assets/logo.webp"
               alt="Logo"
             />
-          </a>
+          </NavLink>
 
           <button
             className="navbar-toggler"
@@ -57,13 +57,6 @@ export const Navbar = () => {
                   </NavLink>
                 </li>
               ))}
-              {/* {
-                categories.map((categories) => (
-                    <li className="nav-item" key={categories}>
-                        <a className="nav-link" href="#">{categories}</a>
-                    </li>
-                ))
-              } */}
             </ul>
             <SearchBar />
           </div>

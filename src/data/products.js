@@ -1,5 +1,6 @@
 export const products = [
     {
+        id: "p1",
         brand: "Generico",
         name: "A6s",
         price: '9.900',
@@ -11,6 +12,7 @@ export const products = [
         offer: false,
     },
     {
+        id: "p2",
         brand: "Generico",
         name: "D18",
         oldPrice: '14.000',
@@ -23,6 +25,7 @@ export const products = [
         offer: false,
     },
     {
+        id: "p3",
         brand: "Generico",
         name: "D20",
         oldPrice: '14.000',
@@ -35,6 +38,7 @@ export const products = [
         offer: false,
     },
     {
+        id: "p4",
         brand: "Generico",
         name: "G11",
         price: '11.999',
@@ -46,6 +50,7 @@ export const products = [
         offer: false,
     },
     {
+        id: "p5",
         brand: "Generico",
         name: "X7",
         price: '16.200',
@@ -57,6 +62,7 @@ export const products = [
         offer: false,
     },
     {
+        id: "p6",
         brand: "Generico",
         name: "Air31",
         price: '16.200',
@@ -68,6 +74,7 @@ export const products = [
         offer: false,
     },
     {
+        id: "p7",
         brand: "Generico",
         name: "USB C",
         price: '2.400',
@@ -79,6 +86,7 @@ export const products = [
         offer: false,
     },
     {
+        id: "p8",
         brand: "Generico",
         name: "Go3",
         price: '26.900',
@@ -90,6 +98,7 @@ export const products = [
         offer: false,
     },
     {
+        id: "p9",
         brand: "Generico",
         name: "Go4",
         price: '32.000',
@@ -101,6 +110,7 @@ export const products = [
         offer: false,
     },
     {
+        id: "p10",
         brand: "Generico",
         name: "Go 4 Led",
         price: '36.900',
@@ -112,6 +122,7 @@ export const products = [
         offer: false,
     },
     {
+        id: "p11",
         brand: "Xiaomi",
         name: "Xiaomi Redmi Buds 6 Play",
         price: '36.000',
@@ -123,6 +134,7 @@ export const products = [
         offer: false,
     },
     {
+        id: "p12",
         brand: "Xiaomi",
         name: "Xiaomi Smart Band 9 Active",
         price: '46.900',
@@ -134,6 +146,7 @@ export const products = [
         offer: false,
     },
     {
+        id: "p13",
         brand: "Xiaomi",
         name: "Xiaomi Sound Pocket 5w",
         price: '55.900',
