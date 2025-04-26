@@ -5,6 +5,7 @@ import "./styles/custom.css";
 import { Home } from "./pages/home";
 import { Footer } from "./components/Footer";
 import { CategoryPage } from "./pages/CategoryPage";
+import { SearchPage } from "./pages/SearchPage";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/categoria/:nombre" element={<CategoryPage />} />
+        <Route path="/buscar" element={<SearchPage />} />
         </Routes>
       </div>
 
