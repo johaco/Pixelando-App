@@ -1,12 +1,12 @@
 import React from 'react'
 
-export const ProductCard = ({image, name, price, sale, oldPrice, reviews}) => {
+export const ProductCard = ({image, name, price, oldPrice, reviews, stock}) => {
   return (
     <div className="col mb-5">
               <div className="card h-100 position-relative  card-product-tech">
-                {sale && (
+                {!stock && (
                   <div className="badge bg-dark text-white position-absolute" style={{ top: "0.5rem", right: "0.5rem" }}>
-                    Sale
+                    Sin Stock
                   </div>
                 )}
                 <img className="card-img-top img-product-tech" src={image} alt="..." />
@@ -21,11 +21,11 @@ export const ProductCard = ({image, name, price, sale, oldPrice, reviews}) => {
                       </div>
                     )}
                     {oldPrice && (
-                      <span className="text-muted text-decoration-line-through me-1">
-                        {oldPrice}
+                      <span className="text-muted text-decoration-line-through me-1 old-price-product-tech">
+                        ${oldPrice}
                       </span>
                     )}
-                    {price}
+                    ${price}
                   </div>
                 </div>
                 <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">

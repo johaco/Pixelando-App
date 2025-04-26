@@ -19,7 +19,7 @@ export const SearchBar = () => {
       onChange={handleInputChange}
     />
     <button className="search-tech btn btn-outline-success" type="submit">
-      Search
+      Buscar
     </button>
   </form>
   )

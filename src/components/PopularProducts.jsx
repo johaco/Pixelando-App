@@ -8,9 +8,9 @@ export const PopularProducts = () => {
       <h2 className="text-start title-product-tech">Populares</h2>
       <hr className="line-tech"/>
         <div className="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-          {products.map(({image, name, price, popular}, index) => (
+          {products.map(({image, name, price, popular, stock}, index) => (
             popular && (
-              <ProductCard image={image} name={name} price={price} key={index}/>
+              <ProductCard image={image} name={name} price={price} stock={stock} key={index}/>
             )
           ))}
         </div>

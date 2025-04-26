@@ -3,4 +3,4 @@ export function FirstLetterCapilation(cadena) {
       return cadena; // Manejar casos donde la cadena es nula o vacía
     }
     return cadena.charAt(0).toUpperCase() + cadena.slice(1);
-  }
+}

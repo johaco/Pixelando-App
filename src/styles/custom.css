@@ -67,6 +67,9 @@ header {
   color: white !important;
   overflow: hidden !important;
 }
+.card-product-tech:hover .old-price-product-tech{
+  color: rgba(255, 255, 255, 0.7) !important;
+}
 
 .card-product-tech:hover .btn-detalles-tech {
   color: white !important; /* texto blanco */
