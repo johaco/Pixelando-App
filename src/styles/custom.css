@@ -126,7 +126,14 @@ div .name-product-tech {
 .title-marca {
   color: #cb6ce6 !important;
 }
+.miniatures {
+  margin-top: 10px;
+  ;
+}
 
+.mini-img.active {
+  border: 2px solid #cb6ce6;
+}
 /* FOOTER */
 
 .footer-tech {

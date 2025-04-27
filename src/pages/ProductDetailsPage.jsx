@@ -7,7 +7,7 @@ export const ProductDetailsPage = () => {
   const { id } = useParams(); // lee el "id" de la URL
   const product = products.find((prod) => prod.id === id);
 
-  const { image, name, brand, description, price, oldPrice } = product;
+  const { images, name, brand, description, price, oldPrice } = product;
 
   if (!product) {
     return <div className="container mt-5">Producto no encontrado.</div>;
@@ -24,7 +24,7 @@ export const ProductDetailsPage = () => {
         <div className="container px-4 px-lg-5 my-5">
           <div className="row gx-4 gx-lg-5 align-items-center">
             <div className="col-md-6">
-              <ImageZoom src={image} />
+            <ImageZoom images={images} />
             </div>
             <div className="col-md-6">
               <div className="small mb-1 title-marca">{brand}</div>

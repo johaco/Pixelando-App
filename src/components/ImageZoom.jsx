@@ -1,7 +1,9 @@
-import React, { useRef } from "react";
+// src/components/ImageZoom.jsx
+import { useRef, useState } from "react";
 
-export const ImageZoom = ({ src, alt }) => {
+export const ImageZoom = ({ images }) => {
   const containerRef = useRef(null);
+  const [activeImage, setActiveImage] = useState(images[0]); // Imagen actual
 
   const handleMouseMove = (event) => {
     const container = containerRef.current;
@@ -9,12 +11,13 @@ export const ImageZoom = ({ src, alt }) => {
 
     container.style.setProperty('--display', 'block');
 
-    const rect = container.getBoundingClientRect();
-    const x = ((event.clientX - rect.left) / container.offsetWidth) * 100;
-    const y = ((event.clientY - rect.top) / container.offsetHeight) * 100;
+    const pointer = {
+      x: (event.nativeEvent.offsetX * 100) / container.offsetWidth,
+      y: (event.nativeEvent.offsetY * 100) / container.offsetHeight,
+    };
 
-    container.style.setProperty('--zoom-x', `${x}%`);
-    container.style.setProperty('--zoom-y', `${y}%`);
+    container.style.setProperty('--zoom-x', `${pointer.x}%`);
+    container.style.setProperty('--zoom-y', `${pointer.y}%`);
   };
 
   const handleMouseOut = () => {
@@ -25,25 +28,38 @@ export const ImageZoom = ({ src, alt }) => {
   };
 
   return (
-    <div
-      ref={containerRef}
-      onMouseMove={handleMouseMove}
-      onMouseOut={handleMouseOut}
-      style={{
-        position: 'relative',
-        overflow: 'hidden',
-        "--url": `url(${src})`,
-        "--zoom-x": "50%",
-        "--zoom-y": "50%",
-        "--display": "none",
-      }}
-      className="image-zoom-wrapper"
-    >
-      <img
-        src={src}
-        alt={alt}
-        className="card-img-top mb-5 mb-md-0"
-      />
+    <div>
+      {/* Imagen principal con zoom */}
+      <div
+        className="image-zoom-wrapper mb-3"
+        ref={containerRef}
+        onMouseMove={handleMouseMove}
+        onMouseOut={handleMouseOut}
+        style={{
+          "--url": `url(${activeImage})`,
+          "--zoom-x": "0%",
+          "--zoom-y": "0%",
+          "--display": "none",
+          position: "relative",
+        }}
+      >
+        {/* REVISAR EL EFECTO FADE IN */}
+        <img  key={activeImage}  src={activeImage} alt="Producto" className="img-fluid fade-in" />
+      </div>
+
+      {/* Miniaturas */}
+      <div className="miniatures d-flex justify-content-center">
+        {images.map((img, index) => (
+          <img
+            key={index}
+            src={img}
+            alt={`Miniatura ${index}`}
+            className={`mini-img mx-2 ${activeImage === img ? "active" : ""}`}
+            onMouseEnter={() => setActiveImage(img)}
+            style={{ width: "70px", height: "70px", objectFit: "cover", cursor: "pointer", border: activeImage === img ? "2px solid #cb6ce6" : "1px solid #ccc", borderRadius: "5px" }}
+          />
+        ))}
+      </div>
     </div>
   );
 };
