@@ -19,7 +19,7 @@ export const Navbar = () => {
           <NavLink className="navbar-brand" to="/">
             <img
               className="d-inline-block img-fluid logo-tech"
-              src="/src/assets/logo.webp"
+              src="/assets/logo.webp"
               alt="Logo"
             />
           </NavLink>
@@ -33,6 +33,7 @@ export const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
+            
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">

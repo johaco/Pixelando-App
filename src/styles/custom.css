@@ -41,6 +41,10 @@ nav .logo-tech {
   height: 40px;
 }
 
+footer .logo-tech {
+  height: 65px;
+}
+
 /* HEADER */
 
 header {
@@ -92,8 +96,47 @@ div .name-product-tech {
   transform: scale(1.05) !important;
 }
 
+/* PRODUCTS DETAILS PAGE */
+.image-zoom-wrapper {
+  width: 100%;
+  height: auto;
+}
+
+.image-zoom-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.image-zoom-wrapper::after {
+  content: '';
+  display: var(--display);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--url);
+  background-repeat: no-repeat;
+  background-size: 200% 200%;
+  background-position: var(--zoom-x) var(--zoom-y);
+  pointer-events: none;
+}
+.title-marca {
+  color: #cb6ce6 !important;
+}
+
 /* FOOTER */
 
 .footer-tech {
   background-color: #1e1e1e !important;
 }
+/* ICONOS SOCIALES */
+
+.icons-social {
+  color: white !important;
+}
+
+
+

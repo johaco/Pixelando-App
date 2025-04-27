@@ -6,7 +6,8 @@ import { HomePage } from "./pages/HomePage";
 import { Footer } from "./components/Footer";
 import { CategoryPage } from "./pages/CategoryPage";
 import { SearchPage } from "./pages/SearchPage";
-import { ProductDetails } from "./pages/ProductDetails";
+import { ProductDetailsPage } from "./pages/ProductDetailsPage";
+
 
 const App = () => {
   return (
@@ -14,16 +15,14 @@ const App = () => {
     <Router>
       <Navbar />
       <div className="main-content">
-
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/homePage" element={<HomePage />} />
         <Route path="/categoria/:nombre" element={<CategoryPage />} />
         <Route path="/buscar" element={<SearchPage />} />
-        <Route path="/producto/:id" element={<ProductDetails />} />
+        <Route path="/producto/:id" element={<ProductDetailsPage />} />
         </Routes>
       </div>
-
         <Footer/>
     </Router>
 
