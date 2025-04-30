@@ -7,12 +7,14 @@ import { Footer } from "./components/Footer";
 import { CategoryPage } from "./pages/CategoryPage";
 import { SearchPage } from "./pages/SearchPage";
 import { ProductDetailsPage } from "./pages/ProductDetailsPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 const App = () => {
   return (
 
     <Router>
+      <ScrollToTop/>
       <Navbar />
       <div className="main-content">
       <Routes>
