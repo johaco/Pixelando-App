@@ -4,11 +4,11 @@ export const products = [
         brand: "Generico",
         name: "A6s",
         price: '9.900',
-        image: "/public/products/a6s.jpg",
+        image: "/products/a6s.1.jpg",
         images: [                  // nuevas imágenes miniaturas
-            "/public/products/a6s.jpg",
-            "/public/products/g11.jpg",
-            "/public/products/d18.jpg"
+            "/products/a6s.1.jpg",
+            "/products/a6s.2.jpg",
+            "/products/a6s.3.jpg"
           ],
         description: "Xiaomi Redmi Note 12 Pro 5G (Onyx Gray, 128 GB)",
         popular: true,
@@ -22,11 +22,11 @@ export const products = [
         name: "D18",
         oldPrice: '14.000',
         price: '11.900',
-        image: "/public/products/d18.jpg",
+        image: "/products/d18.1.jpg",
         images: [                  // nuevas imágenes miniaturas
-            "/public/products/d18.jpg",
-            "/public/products/g11.jpg",
-            "/public/products/d18.jpg"
+            "/products/d18.1.jpg",
+            "/products/d18.2.jpg",
+            "/products/d18.3.jpg"
           ],
         description: "Xiaomi Redmi Note 12 Pro 5G (Onyx Gray, 128 GB)",
         popular: true,
@@ -40,11 +40,11 @@ export const products = [
         name: "D20",
         oldPrice: '14.000',
         price: '11.900',
-        image: "/public/products/d20.jpg",
+        image: "/products/d20.1.jpg",
         images: [                  // nuevas imágenes miniaturas
-            "/public/products/d20.jpg",
-            "/public/products/g11.jpg",
-            "/public/products/d18.jpg"
+            "/products/d20.1.jpg",
+            "/products/d20.2.jpg",
+            "/products/d20.3.jpg"
           ],
         description: "Xiaomi Redmi Note 12 Pro 5G (Onyx Gray, 128 GB)",
         popular: true,
@@ -57,11 +57,11 @@ export const products = [
         brand: "Generico",
         name: "G11",
         price: '11.999',
-        image: "/public/products/g11.jpg",
+        image: "/products/g11.1.jpg",
         images: [                  // nuevas imágenes miniaturas
-            "/public/products/g11.jpg",
-            "/public/products/g11.jpg",
-            "/public/products/d18.jpg"
+            "/products/g11.1.jpg",
+            "/products/g11.2.jpg",
+            "/products/g11.3.jpg"
           ],
         description: "Xiaomi Redmi Note 12 Pro 5G (Onyx Gray, 128 GB)",
         popular: true,
@@ -74,11 +74,11 @@ export const products = [
         brand: "Generico",
         name: "X7",
         price: '16.200',
-        image: "/public/products/x7.jpg",
+        image: "/products/x7.1.jpg",
         images: [                  // nuevas imágenes miniaturas
-            "/public/products/x7.jpg",
-            "/public/products/g11.jpg",
-            "/public/products/d18.jpg"
+            "/products/x7.1.jpg",
+            "/products/x7.2.jpg",
+            "/products/x7.3.jpg"
           ],
         description: "Xiaomi Redmi Note 12 Pro 5G (Onyx Gray, 128 GB)",
         popular: true,
@@ -91,11 +91,11 @@ export const products = [
         brand: "Generico",
         name: "Air31",
         price: '16.200',
-        image: "/public/products/air31.jpg",
+        image: "/products/air31.1.jpg",
         images: [                  // nuevas imágenes miniaturas
-            "/public/products/air31.jpg",
-            "/public/products/g11.jpg",
-            "/public/products/d18.jpg"
+            "/products/air31.1.jpg",
+            "/products/air31.2.jpg",
+            "/products/air31.3.jpg"
           ],
         description: "Xiaomi Redmi Note 12 Pro 5G (Onyx Gray, 128 GB)",
         popular: true,
@@ -108,11 +108,11 @@ export const products = [
         brand: "Generico",
         name: "USB C",
         price: '2.400',
-        image: "/public/products/usb.jpg",
+        image: "/products/usba.5.1.jpg",
         images: [                  // nuevas imágenes miniaturas
-            "/public/products/usb.jpg",
-            "/public/products/g11.jpg",
-            "/public/products/d18.jpg"
+            "/products/usba.5.1.jpg",
+            "/products/usba.5.2.jpg",
+            "/products/usba.5.3.jpg"
           ],
         description: "Xiaomi Redmi Note 12 Pro 5G (Onyx Gray, 128 GB)",
         popular: true,
@@ -121,66 +121,15 @@ export const products = [
         offer: false,
     },
     {
-        id: "p8",
-        brand: "Generico",
-        name: "Go3",
-        price: '26.900',
-        image: "/public/products/go3.jpg",
-        images: [                  // nuevas imágenes miniaturas
-            "/public/products/go3.jpg",
-            "/public/products/g11.jpg",
-            "/public/products/d18.jpg"
-          ],
-        description: "Xiaomi Redmi Note 12 Pro 5G (Onyx Gray, 128 GB)",
-        popular: true,
-        category: "parlantes",
-        stock: true,
-        offer: false,
-    },
-    {
-        id: "p9",
-        brand: "Generico",
-        name: "Go4",
-        price: '32.000',
-        image: "/public/products/go4pro.jpg",
-        images: [                  // nuevas imágenes miniaturas
-            "/public/products/go4pro.jpg",
-            "/public/products/g11.jpg",
-            "/public/products/d18.jpg"
-          ],
-        description: "Xiaomi Redmi Note 12 Pro 5G (Onyx Gray, 128 GB)",
-        popular: true,
-        category: "parlantes",
-        stock: true,
-        offer: false,
-    },
-    {
-        id: "p10",
-        brand: "Generico",
-        name: "Go 4 Led",
-        price: '36.900',
-        image: "/public/products/go4led.jpg",
-        images: [                  // nuevas imágenes miniaturas
-            "/public/products/go4led.jpg",
-            "/public/products/g11.jpg",
-            "/public/products/d18.jpg"
-          ],
-        description: "Xiaomi Redmi Note 12 Pro 5G (Onyx Gray, 128 GB)",
-        popular: true,
-        category: "parlantes",
-        stock: true,
-        offer: false,
-    },
-    {
         id: "p11",
         brand: "Xiaomi",
         name: "Redmi Buds 6 Play",
         price: '36.000',
-        image: "/public/products/redmi.jpg",
+        image: "/products/redmi.1.jpg",
         images: [                  // nuevas imágenes miniaturas
-            "/public/products/redmi.jpg",
-            "/public/products/g11.jpg",
-            "/public/products/d18.jpg"
+            "/products/redmi.1.jpg",
+            "/products/redmi.2.jpg",
+            "/products/redmi.3.jpg"
           ],
         description: "Auriculares Inalámbricos Xiaomi Redmi Buds 6 Play Black",
         popular: true,
@@ -193,11 +142,11 @@ export const products = [
         brand: "Xiaomi",
         name: "Smart Band 9 Active",
         price: '46.900',
-        image: "/public/products/xiaomi-band-active.jpg",
+        image: "/products/bandxiaomi.1.jpg",
         images: [                  // nuevas imágenes miniaturas
-            "/public/products/xiaomi-band-active.jpg",
-            "/public/products/g11.jpg",
-            "/public/products/d18.jpg"
+            "/products/bandxiaomi.1.jpg",
+            "/products/bandxiaomi.2.jpg",
+            "/products/bandxiaomi.3.jpg"
           ],
         description: "Auriculares Inalámbricos Xiaomi Redmi Buds 6 Play Black",
         popular: true,
@@ -210,11 +159,11 @@ export const products = [
         brand: "Xiaomi",
         name: "Sound Pocket 5w",
         price: '55.900',
-        image: "/public/products/xiaomi.jpg",
+        image: "/products/parlantexiaomi5w.1.jpg",
         images: [                  // nuevas imágenes miniaturas
-            "/public/products/xiaomi.jpg",
-            "/public/products/g11.jpg",
-            "/public/products/d18.jpg"
+            "/products/parlantexiaomi5w.1.jpg",
+            "/products/parlantexiaomi5w.2.jpg",
+            "/products/parlantexiaomi5w.3.jpg"
           ],
         description: "Auriculares Inalámbricos Xiaomi Redmi Buds 6 Play Black",
         popular: true,
