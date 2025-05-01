@@ -8,7 +8,6 @@ export const Navbar = () => {
     "Auriculares",
     "Smartwatchs",
     "Cables",
-    "Accesorios",
   ];
 
   const closeNavbar = () => {
