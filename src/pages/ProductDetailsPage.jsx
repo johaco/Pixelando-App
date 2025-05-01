@@ -4,8 +4,6 @@ import { ProductCard } from "../components/ProductCard";
 import { useEffect, useState } from "react";
 
 export const ProductDetailsPage = () => {
-
-
   const [isChanging, setIsChanging] = useState(false);
 
   const handleImageChange = (img) => {
@@ -15,14 +13,13 @@ export const ProductDetailsPage = () => {
       setIsChanging(false);
     }, 100); // le da tiempo a aplicar el efecto
   };
-  
+
   const { id } = useParams();
   const product = products.find((prod) => prod.id === id);
 
   const { images, name, brand, description, price, oldPrice } = product;
 
   const [mainImage, setMainImage] = useState(images[0]);
-
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -37,6 +34,12 @@ export const ProductDetailsPage = () => {
     (prod) => prod.category === product.category && prod.id !== product.id
   );
 
+  // URL de WhatsApp con el mensaje predefinido
+  const currentUrl = window.location.href;
+  const whatsappUrl = `https://wa.me/5492634618976?text=¡Hola! Me interesa el producto *${name}* que vi en tu catálogo: ${encodeURIComponent(
+    currentUrl
+  )}`;
+
   return (
     <>
       {/* Detalle del producto */}
@@ -47,7 +50,9 @@ export const ProductDetailsPage = () => {
               <img
                 src={mainImage}
                 alt={name}
-                className={`card-img-top mb-3 smooth-image ${isChanging ? 'smooth-image-change' : ''}`}
+                className={`card-img-top mb-3 smooth-image ${
+                  isChanging ? "smooth-image-change" : ""
+                }`}
               />
 
               <div className="d-flex justify-content-center gap-2">
@@ -69,7 +74,6 @@ export const ProductDetailsPage = () => {
                     }}
                     onMouseEnter={() => handleImageChange(img)}
                     onClick={() => handleImageChange(img)}
-                    
                   />
                 ))}
               </div>
@@ -88,20 +92,15 @@ export const ProductDetailsPage = () => {
               </div>
               <p className="lead">{description}</p>
               <div className="d-flex">
-                <input
-                  className="form-control text-center me-3"
-                  id="inputQuantity"
-                  type="number"
-                  defaultValue="1"
-                  style={{ maxWidth: "3rem" }}
-                />
-                <button
-                  className="btn btn-outline-dark flex-shrink-0"
-                  type="button"
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-success flex-shrink-0"
                 >
-                  <i className="bi-cart-fill me-1"></i>
-                  Añadir al carrito
-                </button>
+                  <i className="bi-whatsapp me-1"></i>
+                  Consultar por WhatsApp
+                </a>
               </div>
             </div>
           </div>
