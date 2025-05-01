@@ -3,12 +3,7 @@ import { SearchBar } from "./SearchBar";
 import { Collapse } from "bootstrap";
 
 export const Navbar = () => {
-  const categories = [
-    "Parlantes",
-    "Auriculares",
-    "Smartwatchs",
-    "Cables",
-  ];
+  const categories = ["Parlantes", "Auriculares", "Smartwatchs", "Cables"];
 
   const closeNavbar = () => {
     const navbarCollapse = document.getElementById("navbarSupportedContent");
@@ -36,11 +31,21 @@ export const Navbar = () => {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={() => {
+            const navbarCollapse = document.getElementById(
+              "navbarSupportedContent"
+            );
+            const bsCollapse =
+              Collapse.getInstance(navbarCollapse) ||
+              new Collapse(navbarCollapse, { toggle: false });
+
+            if (navbarCollapse.classList.contains("show")) {
+              bsCollapse.hide(); // Si ya está abierto, cerralo
+            } else {
+              bsCollapse.show(); // Si está cerrado, abrilo
+            }
+          }}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
