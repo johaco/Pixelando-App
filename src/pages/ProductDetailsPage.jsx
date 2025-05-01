@@ -90,7 +90,7 @@ export const ProductDetailsPage = () => {
                 )}
                 <span>${price}</span>
               </div>
-              <p className="lead">{description}</p>
+              <p className="lead" style={{ whiteSpace: 'pre-line' }}>{description}</p>
               <div className="d-flex">
                 <a
                   href={whatsappUrl}
