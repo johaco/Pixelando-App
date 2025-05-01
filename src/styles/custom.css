@@ -134,6 +134,16 @@ div .name-product-tech {
 .mini-img.active {
   border: 2px solid #cb6ce6;
 }
+
+.smooth-image {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.smooth-image-change {
+  opacity: 0.3;
+}
+
 /* FOOTER */
 
 .footer-tech {

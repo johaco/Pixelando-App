@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export const SearchBar = () => {
+export const SearchBar = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate();
 
@@ -13,9 +13,13 @@ export const SearchBar = () => {
     event.preventDefault();
     if (searchTerm.trim() !== "") {
       navigate(`/buscar?q=${encodeURIComponent(searchTerm.trim())}`);
-      setSearchTerm(""); // Limpiar input después de buscar (opcional)
+      setSearchTerm("");
+
+      requestAnimationFrame(() => {
+        onSearch?.(); // Esto ejecuta closeNavbar después de actualizar el DOM
+      });
     }
-  }
+  };
 
   return (
     <form className="d-flex" role="search" onSubmit={handleSubmit}>
@@ -31,5 +35,5 @@ export const SearchBar = () => {
         Buscar
       </button>
     </form>
-  )
-}
+  );
+};

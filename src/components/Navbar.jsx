@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { SearchBar } from "./SearchBar";
 import { NavLink } from "react-router-dom";
+import { SearchBar } from "./SearchBar";
+import { Collapse } from "bootstrap";
 
 export const Navbar = () => {
   const categories = [
@@ -13,9 +13,13 @@ export const Navbar = () => {
 
   const closeNavbar = () => {
     const navbarCollapse = document.getElementById("navbarSupportedContent");
-    const bsCollapse = window.bootstrap?.Collapse?.getInstance(navbarCollapse);
-    if (bsCollapse) {
-      bsCollapse.hide(); // Oculta el collapse si ya está inicializado
+
+    if (navbarCollapse && navbarCollapse.classList.contains("show")) {
+      const bsCollapse =
+        Collapse.getInstance(navbarCollapse) ||
+        new Collapse(navbarCollapse, { toggle: false });
+
+      bsCollapse.hide();
     }
   };
 
