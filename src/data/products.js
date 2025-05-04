@@ -201,7 +201,7 @@ Incluye cable USB de 1 metro.`,
             "/products/redmi.2.jpg",
             "/products/redmi.3.jpg"
           ],
-        description: `Los Xiaomi Redmi Buds 6 Play son auriculares inalámbricos diseñados para ofrecerte un sonido claro y nítido en todo momento. Con un diseño cómodo y elegante, estos auriculares te permiten disfrutar de música, llamadas y más, con una excelente relación calidad-precio.
+        description: `Los Xiaomi Redmi Buds 6 Play son auriculares inalámbricos diseñados para ofrecerte un sonido claro y nítido en todo momento.
 
 🔋 Batería: hasta 7 horas de uso continuo.
 
@@ -218,7 +218,7 @@ Incluye cable USB-C y manual de usuario.
 `,
         popular: true,
         category: "auriculares",
-        stock: true,
+        stock: false,
         offer: false,
     },
     {
@@ -250,7 +250,7 @@ Incluye cable USB-C y manual de usuario.
 Incluye banda ajustable, cable de carga y manual.`,
         popular: true,
         category: "smartwatchs",
-        stock: true,
+        stock: false,
         offer: true,
     },
     {
@@ -278,7 +278,7 @@ Incluye banda ajustable, cable de carga y manual.`,
 Incluye cable de carga y manual de usuario.`,
         popular: true,
         category: "parlantes",
-        stock: true,
+        stock: false,
         offer: false,
     },
 ]

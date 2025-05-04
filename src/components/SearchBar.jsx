@@ -26,13 +26,13 @@ export const SearchBar = ({ onSearch }) => {
       <input
         className="form-control me-2 form-control-tech"
         type="search"
-        placeholder="Buscar"
+        placeholder="Buscar productos..."
         aria-label="Search"
         value={searchTerm}
         onChange={handleInputChange}
       />
       <button className="search-tech btn btn-outline-success" type="submit">
-        Buscar
+      <i class="bi bi-search"></i>
       </button>
     </form>
   );

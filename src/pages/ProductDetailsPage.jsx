@@ -43,10 +43,15 @@ export const ProductDetailsPage = () => {
   return (
     <>
       {/* Detalle del producto */}
+      
       <section className="py-5">
+        
         <div className="container px-4 px-lg-5 my-5">
+          
           <div className="row gx-4 gx-lg-5 align-items-center">
-            <div className="col-md-6">
+            
+            <div className="col-md-8">
+              
               <img
                 src={mainImage}
                 alt={name}
@@ -79,18 +84,18 @@ export const ProductDetailsPage = () => {
               </div>
             </div>
 
-            <div className="col-md-6">
+            <div className="col-md-4">
               <div className="small mb-1 title-marca">{brand}</div>
-              <h1 className="display-5 fw-bolder">{name}</h1>
-              <div className="fs-5 mb-5">
+              <h2 className="display-7 fw-bolder">{name}</h2>
+              <div className="fs-1 mb-3">
                 {oldPrice && (
                   <span className="text-muted text-decoration-line-through me-2">
-                    ${oldPrice}
+                    $ {oldPrice}
                   </span>
                 )}
-                <span>${price}</span>
+                <span>$ {price}</span>
               </div>
-              <p className="lead" style={{ whiteSpace: 'pre-line' }}>{description}</p>
+              <p className="" style={{ whiteSpace: 'pre-line' }}>{description}</p>
               <div className="d-flex">
                 <a
                   href={whatsappUrl}
@@ -108,7 +113,7 @@ export const ProductDetailsPage = () => {
       </section>
 
       {/* Productos relacionados */}
-      <section className="py-5 bg-light">
+      <section className="py-1 bg-light">
         <div className="container px-4 px-lg-5 mt-5">
           <h2 className="fw-bolder mb-4">Productos relacionados</h2>
           <div className="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
