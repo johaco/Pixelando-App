@@ -3,7 +3,7 @@ import { SearchBar } from "./SearchBar";
 import { Collapse } from "bootstrap";
 
 export const Navbar = () => {
-  const categories = ["Parlantes", "Auriculares", "Smartwatchs", "Cables"];
+  const categories = ["Parlantes", "Auriculares", "Smartwatchs", "Cables", "Cámaras de Seguridad"];
 
   const closeNavbar = () => {
     const navbarCollapse = document.getElementById("navbarSupportedContent");

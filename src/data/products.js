@@ -46,7 +46,7 @@ Incluye estuche de carga, cable y manual.`,
 📱 Notificaciones de llamadas, mensajes y apps.
 
 Incluye correa ajustable y manual.`,
-        popular: true,
+        popular: false,
         category: "smartwatchs",
         stock: true,
         offer: false,
@@ -101,7 +101,7 @@ Incluye correa ajustable y manual.`,
 💡 Luces LED para un toque gamer adicional.
 
 Incluye cable usb y manual.`,
-        popular: true,
+        popular: false,
         category: "auriculares",
         stock: true,
         offer: false,
@@ -128,7 +128,7 @@ Incluye cable usb y manual.`,
 📱 Notificaciones de llamadas, mensajes y aplicaciones.
 
 Incluye base de carga y manual.`,
-        popular: true,
+        popular: false,
         category: "smartwatchs",
         stock: false,
         offer: false,
@@ -279,8 +279,39 @@ Incluye cable de carga y manual de usuario.`,
         popular: true,
         category: "parlantes",
         stock: false,
-        offer: false,
+        offer: true,
     },
+    {
+      id: "p14",
+      brand: "Gadnic",
+      name: "DM200W Full HD Motorizada",
+      price: '59.900',
+      image: "/products/Gadnici.1.jpg",
+      images: [                  // nuevas imágenes miniaturas
+          "/products/Gadnici.1.jpg",
+          "/products/Gadnici.2.jpg",
+          "/products/Gadnici.3.jpg"
+        ],
+      description: `La Gadnic DM200W es una cámara de seguridad WiFi motorizada que ofrece vigilancia en tiempo real desde tu celular, ideal para interiores del hogar o negocio.
+
+🎥 Resolución Full HD 1080P para imagen clara y detallada.
+
+📱 Conexión WiFi y control remoto desde app (Android/iOS).
+
+🌀 Movimiento motorizado: giro horizontal 355° y vertical 90°.
+
+🌙 Visión nocturna infrarroja automática.
+
+🎤 Audio bidireccional: micrófono y altavoz integrados.
+
+💾 Grabación en tarjeta microSD (hasta 128 GB) o en la nube.
+
+Incluye cámara, soporte, tornillos, cable de alimentación y manual.`,
+      popular: true,
+      category: "Cámaras de Seguridad",
+      stock: false,
+      offer: false,
+  },
 ]
 
 

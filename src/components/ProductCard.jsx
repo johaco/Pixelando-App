@@ -10,7 +10,11 @@ export const ProductCard = ({
 }) => {
   return (
     <div className="col mb-5">
+      <Link to={`/producto/${id}`} className="text-decoration-none">
+        {/* Card with image and text */}
       <div className="card h-100 position-relative  card-product-tech">
+        
+       
         {/* tag */}
           <div
             className={`position-absolute badge ${stock ? "bg-success" : "bg-primary"}`}
@@ -48,6 +52,7 @@ export const ProductCard = ({
           </div>
         </div>
       </div>
+      </Link>
     </div>
   );
 };
