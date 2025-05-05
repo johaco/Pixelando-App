@@ -312,6 +312,33 @@ Incluye cámara, soporte, tornillos, cable de alimentación y manual.`,
       stock: false,
       offer: false,
   },
+  {
+    id: "p15",
+    brand: "JBL",
+    name: " in-ear JBL Manos libres C50HI",
+    price: '19.500',
+    image: "/products/C50HI.1.jpg",
+    images: [                  // nuevas imágenes miniaturas
+        "/products/C50HI.1.jpg",
+        "/products/C50HI.2.jpg",
+        "/products/C50HI.3.jpg"
+      ],
+    description: `Los JBL C50HI combinan un sonido potente con diseño liviano, ideales para escuchar música y atender llamadas con total comodidad.
+
+🎵 Sonido JBL Pure Bass para bajos profundos y claros.
+
+🎤 Micrófono integrado con botón multifunción para llamadas y control de música.
+
+🎧 Diseño in-ear liviano con almohadillas de distintos tamaños.
+
+🔌 Conector jack 3.5mm, compatible con la mayoría de dispositivos.
+
+Incluye almohadillas intercambiables y manual de usuario.`,
+    popular: true,
+    category: "auriculares",
+    stock: false,
+    offer: false,
+},
 ]
 
 
