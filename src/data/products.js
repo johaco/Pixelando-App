@@ -194,7 +194,8 @@ Incluye cable USB de 1 metro.`,
         id: "p11",
         brand: "Xiaomi",
         name: "Redmi Buds 6 Play",
-        price: '32.000',
+        oldPrice: '36.000',
+        price: '29.900',
         image: "/products/redmi.1.jpg",
         images: [                  // nuevas imágenes miniaturas
             "/products/redmi.1.jpg",
@@ -218,7 +219,7 @@ Incluye cable USB-C y manual de usuario.
 `,
         popular: true,
         category: "auriculares",
-        stock: false,
+        stock: true,
         offer: false,
     },
     {
@@ -334,9 +335,9 @@ Incluye cámara, soporte, tornillos, cable de alimentación y manual.`,
 🔌 Conector jack 3.5mm, compatible con la mayoría de dispositivos.
 
 Incluye almohadillas intercambiables y manual de usuario.`,
-    popular: true,
+    popular: false,
     category: "auriculares",
-    stock: false,
+    stock: true,
     offer: false,
 },
 ]
